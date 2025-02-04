@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="assets/header.svg" alt="Header" />
-</div>
+
+![Image](https://github.com/user-attachments/assets/dab40454-1ab9-4a47-b63f-3c353dcd44f7)
 
 # 🚀 Amplify-Docusaurus-Starter
 
@@ -10,6 +10,10 @@
 [![Docusaurus](https://img.shields.io/badge/Docusaurus-1A1A1A?style=for-the-badge&logo=docusaurus&logoColor=white)](https://docusaurus.io/)
 
 🔥🚀 このスターターキットは、最新のウェブ技術とAWSサービスを組み合わせ、効率的な開発とデプロイを実現します！
+
+
+</div>
+
 
 ## 💡 概要
 本リポジトリは、AWS AmplifyとDocusaurusを組み合わせた静的サイトのスターターキットです。
