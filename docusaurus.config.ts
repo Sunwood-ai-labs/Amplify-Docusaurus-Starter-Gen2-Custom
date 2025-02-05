@@ -46,14 +46,13 @@ const config: Config = {
           showReadingTime: true,
           // ブログのルートパスを/blogに設定
           routeBasePath: 'blog',
-          // サイドバーに表示する記事数を増やす
+          blogSidebarTitle: '最新の記事',
           blogSidebarCount: 'ALL',
-          blogSidebarTitle: '全ての記事',
-          // 未切り詰めのブログ投稿の警告を無視
-          onUntruncatedBlogPosts: 'ignore',
+          postsPerPage: 5,
           feedOptions: {
             type: ['rss', 'atom'],
-            xslt: true,
+            title: 'My Site Blog',
+            description: 'Blog posts from My Site',
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -86,6 +85,7 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
+        {to: '/blog', label: 'Blog', position: 'left'},
         {
           to: '/about',
           label: 'About Us',
