@@ -1,6 +1,6 @@
 yangshun:
   name: Yangshun Tay
-  title: Front End Engineer @ Facebook
+  title: Docusaurus コア開発者
   url: https://github.com/yangshun
   image_url: https://github.com/yangshun.png
   page: true
@@ -10,7 +10,7 @@ yangshun:
 
 slorber:
   name: Sébastien Lorber
-  title: Docusaurus maintainer
+  title: Docusaurus メンテナー
   url: https://sebastienlorber.com
   image_url: https://github.com/slorber.png
   page:
@@ -23,10 +23,15 @@ slorber:
     newsletter: https://thisweekinreact.com
 
 maki:
-  name: maki maki
-  title: Data scientist
-  url: https://hamaruki.com
-  image_url: https://avatars.githubusercontent.com/u/108736814?v=4
+  name: Maki
+  title: リードエンジニア @ Sunwood AI Labs
+  url: https://github.com/Sunwood-ai-labs
+  image_url: https://github.com/Sunwood-ai-labs.png
+  email: sunwood.ai.labs@gmail.com
+  twitter: sunwood_ai_labs
+  description: |
+    AIとクラウドテクノロジーの専門家。AWS認定ソリューションアーキテクト。
+    DocusaurusとAWS Amplifyを使用した最新のウェブ開発に情熱を注いでいます。
   page:
     # customize the url of the author page at /blog/authors/<permalink>
     permalink: '/all-maki-maki-articles'
