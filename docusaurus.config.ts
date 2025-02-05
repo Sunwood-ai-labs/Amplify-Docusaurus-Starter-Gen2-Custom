@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
+  title: 'Sunwood ai labs',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/cat1.svg',
 
@@ -51,8 +51,8 @@ const config: Config = {
           postsPerPage: 5,
           feedOptions: {
             type: ['rss', 'atom'],
-            title: 'My Site Blog',
-            description: 'Blog posts from My Site',
+            title: 'Sunwood ai labs Blog',
+            description: 'Blog posts from Sunwood ai labs',
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -73,9 +73,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/cat1.svg',
     navbar: {
-      title: 'My Site',
+      title: 'Sunwood ai labs',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Sunwood ai labs Logo',
         src: 'img/cat1.svg',
       },
       items: [
