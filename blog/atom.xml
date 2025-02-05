@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://staging.d28wunjm2nr6tk.amplifyapp.com/Amplify-Docusaurus-Starter-Gen2-Custom/blog/</id>
-    <title>My Site Blog</title>
+    <title>Sunwood ai labs Blog</title>
     <updated>2025-02-04T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://staging.d28wunjm2nr6tk.amplifyapp.com/Amplify-Docusaurus-Starter-Gen2-Custom/blog/"/>
-    <subtitle>Blog posts from My Site</subtitle>
+    <subtitle>Blog posts from Sunwood ai labs</subtitle>
     <icon>https://staging.d28wunjm2nr6tk.amplifyapp.com/Amplify-Docusaurus-Starter-Gen2-Custom/img/cat1.svg</icon>
     <entry>
         <title type="html"><![CDATA[人工知能の倫理と課題]]></title>
