@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/Amplify-Docusaurus-Starter-Gen2-Custom/blog","blogTitle":"Blog","authorsListPath":"/Amplify-Docusaurus-Starter-Gen2-Custom/blog/authors"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[48],{7358:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/Amplify-Docusaurus-Starter-Gen2-Custom/blog/page/2","page":2,"postsPerPage":5,"totalPages":2,"totalCount":6,"previousPage":"/Amplify-Docusaurus-Starter-Gen2-Custom/blog","blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
