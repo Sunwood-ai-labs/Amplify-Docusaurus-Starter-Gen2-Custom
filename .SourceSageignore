@@ -46,3 +46,8 @@ venv
 .venv
 
 .docusaurus
+
+node_modules
+
+.amplify/
+amplify

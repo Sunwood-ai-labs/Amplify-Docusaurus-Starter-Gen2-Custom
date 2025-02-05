@@ -7,13 +7,12 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/cat1.svg',
 
   // Set the production url of your site here
-  url: 'https://Sunwood-ai-labs.github.io',
+  url: 'https://staging.d28wunjm2nr6tk.amplifyapp.com',
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/Amplify-Docusaurus-Starter/',
+  baseUrl: '/',
   trailingSlash: true,
 
   // GitHub pages deployment config.
@@ -45,6 +44,11 @@ const config: Config = {
         },
         blog: {
           showReadingTime: true,
+          // ブログをトップページに設定
+          routeBasePath: '/',
+          // サイドバーに表示する記事数を増やす
+          blogSidebarCount: 'ALL',
+          blogSidebarTitle: '全ての記事',
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
@@ -67,12 +71,12 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/cat1.svg',
     navbar: {
       title: 'My Site',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/cat1.svg',
       },
       items: [
         {
@@ -81,7 +85,16 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          to: '/about',
+          label: 'About Us',
+          position: 'left',
+        },
+        {
+          to: '/tags',
+          label: 'Tags',
+          position: 'left',
+        },
         {
           href: 'https://github.com/Sunwood-ai-labs/Amplify-Docusaurus-Starter',
           label: 'GitHub',

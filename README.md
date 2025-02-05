@@ -6,18 +6,25 @@
 
 ![GitHub stars](https://img.shields.io/github/stars/Sunwood-ai-labs/Amplify-Docusaurus-Starter?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/Sunwood-ai-labs/Amplify-Docusaurus-Starter?style=social)
-[![Amplify](https://img.shields.io/badge/AWS%20Amplify-FF9900?style=for-the-badge&logo=aws-amplify&logoColor=white)](https://aws.amazon.com/amplify/)
+[![Amplify](https://img.shields.io/badge/AWS%20Amplify%20Gen2-FF9900?style=for-the-badge&logo=aws-amplify&logoColor=white)](https://aws.amazon.com/amplify/)
 [![Docusaurus](https://img.shields.io/badge/Docusaurus-1A1A1A?style=for-the-badge&logo=docusaurus&logoColor=white)](https://docusaurus.io/)
 
-🔥🚀 このスターターキットは、最新のウェブ技術とAWSサービスを組み合わせ、効率的な開発とデプロイを実現します！
-
+🔥🚀 このスターターキットは、最新のAWS Amplify Gen2とDocusaurusを組み合わせ、効率的な開発とデプロイを実現します！
 
 </div>
 
 
 ## 💡 概要
-本リポジトリは、AWS AmplifyとDocusaurusを組み合わせた静的サイトのスターターキットです。
-このテンプレートを利用することで、迅速にドキュメントサイトやウェブサイトの構築・デプロイが可能となります。
+本リポジトリは、AWS Amplify Gen2とDocusaurusを組み合わせた静的サイトのスターターキットです。
+AWS Amplify Gen2は、従来のAmplifyフレームワークを進化させ、より高速で柔軟なインフラストラクチャ管理を実現します。
+
+### 🌟 AWS Amplify Gen2の特徴
+
+- **TypeScriptネイティブ**: インフラストラクチャをTypeScriptで定義
+- **高速なデプロイ**: 最適化されたデプロイプロセス
+- **柔軟なカスタマイズ**: AWS CDKとの完全な互換性
+- **改善されたローカル開発**: 強化されたサンドボックス環境
+- **セキュリティ強化**: よりきめ細かいIAM権限管理
 
 ## 📥 インストール
 
@@ -41,65 +48,93 @@ npm run build
 
 このコマンドで、静的コンテンツが `build` ディレクトリに生成されます。
 
+## 🛡️ セキュリティ設定
+
+このプロジェクトは、AWS Amplifyのデフォルトのセキュリティ設定を使用しています。
+
 ## 🚀 デプロイ
 
-### GitHub Pages でのデプロイ
+### 🌐 デプロイ先URL
 
-SSH を使用する場合:
+本サイトは以下のURLでホストされています：
+https://staging.d28wunjm2nr6tk.amplifyapp.com/
+
+### 📦 デプロイスクリプトを使用したデプロイ
+
+このプロジェクトには、デプロイを自動化するスクリプトが用意されています：
 
 ```bash
-USE_SSH=true npm run deploy
+# デプロイスクリプトを実行
+./scripts/deploy.sh
 ```
 
-SSH を使用しない場合:
+このスクリプトは以下の処理を自動的に行います：
+1. プロジェクトのビルド
+2. ビルドファイルのZIP化
+3. S3バケットの作成（存在しない場合）
+4. ビルドファイルのS3へのアップロード
 
+スクリプト実行後は、表示される手順に従ってAWS Amplifyコンソールでデプロイを完了させてください。
+
+### 🛠️ 手動デプロイ
+
+手動でデプロイを行う場合は、以下の手順に従ってください：
+
+### 📦 AWS Amplify Gen2を使用したデプロイ
+
+#### 1. ローカル開発環境の確認
 ```bash
-GIT_USER=Sunwood-ai-labs npm run deploy
+# Amplifyの設定を確認
+npx ampx info
+
+# サンドボックスモードでテスト
+npx ampx sandbox
 ```
 
-このコマンドは、ウェブサイトをビルドし、`gh-pages` ブランチへ自動でプッシュします。
-
-### ☁️ AWS Amplify を使用したデプロイ
-
-1. **バックエンドの更新とデプロイ**
-   ```bash
-   amplify push
-   ```
-   
-2. **ビルド成果物のアップロードと公開**
-   ```bash
-   amplify publish
-   ```
-
-3. **Amplify Console の起動**
-   ```bash
-   amplify console
-   ```
-
-## 🚀 gh-pages を利用したデプロイ方法
-
-GitHub Pagesを使用してサイトを公開するには、以下の手順を実行してください。
-
-1. 
-
+#### 2. ビルドとパッケージング
 ```bash
+# プロジェクトのビルド
 npm run build
+
+# ビルドファイルのZIP化
+cd build && zip -r ../build.zip .
+cd ..
 ```
-ビルドコマンドで `build` ディレクトリに静的ファイルを生成します。
 
-2. 必要に応じて、SSHを利用する場合は以下のコマンドを実行します。
+#### 3. S3バケットの作成とアップロード
+```bash
+# S3バケットの作成
+aws s3api create-bucket \
+  --bucket my-website-secure-deploy \
+  --create-bucket-configuration LocationConstraint=ap-northeast-1
 
-   ```bash
-   USE_SSH=true npm run deploy
-   ```
+# ビルドファイルのアップロード
+aws s3 cp build.zip s3://my-website-secure-deploy/
+```
 
-3. SSHを使用しない場合は、次のコマンドを実行します。
+#### 4. AWS Amplifyでのデプロイ
 
-   ```bash
-   GIT_USER=Sunwood-ai-labs npm run deploy
-   ```
+1. [AWS Amplifyコンソール](https://ap-northeast-1.console.aws.amazon.com/amplify/home)にアクセス
+2. プロジェクト「my-website-secure」を選択
+3. 「ホスティング」タブを選択
+4. 「main」ブランチを選択
+5. 「デプロイ」ボタンをクリック
+6. 「ソースファイル」で「Amazon S3」を選択
+7. S3のURL `s3://my-website-secure-deploy/build.zip` を入力
+8. 「保存してデプロイ」をクリック
 
-このコマンドは、`gh-pages` ブランチへサイトを自動的にデプロイします。
+#### 5. クリーンアップ（オプション）
+```bash
+# S3のファイルを削除
+aws s3 rm s3://my-website-secure-deploy/build.zip
+```
+
+### 📝 注意事項
+
+- デプロイ前に必ず `npx ampx sandbox` でローカルテストを実行してください
+- AWS認証情報が正しく設定されていることを確認してください
+- S3バケット名は一意である必要があります
+- デプロイ後、[Amplifyコンソール](https://ap-northeast-1.console.aws.amazon.com/amplify/home)でステータスを確認できます
 
 ## 🏗️ アーキテクチャ
 
@@ -119,15 +154,13 @@ flowchart TD
         F[CloudFront Distribution]
         D --> E
         E --> F
+        F --> H[https://staging.d28wunjm2nr6tk.amplifyapp.com/]
     end
 
     C --> D
-    F --> G[ユーザーアクセス]
 ```
 
 ※ 本サイトは、AWS Amplify による自動デプロイと CloudFront を用いた静的ファイル配信で運用されています。
-
----
 
 ## ❌ AWS Amplify の削除方法
 
@@ -150,4 +183,6 @@ amplify delete
 3. 設定メニューまたは画面右上のオプションから「App の削除」または「削除」を選択します。
 4. 表示される確認プロンプトに従い、削除処理を進めます。
 
-**注意:** 一度削除するとリソースは復元できません。削除前に必要なバックアップがあるかどうかを十分に確認してください。
+**注意:** 
+- 一度削除するとリソースは復元できません。削除前に必要なバックアップがあるかどうかを十分に確認してください。
+- WAFの設定を削除する場合は、CloudFormationスタックも個別に削除する必要があります。

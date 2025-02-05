@@ -41,3 +41,8 @@ amplifytools.xcconfig
 **.sample
 #amplify-do-not-edit-end
 .SourceSageAssets
+
+# amplify
+.amplify
+amplify_outputs*
+amplifyconfiguration*
