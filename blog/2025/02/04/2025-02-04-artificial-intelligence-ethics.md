@@ -2,7 +2,7 @@
 slug: artificial-intelligence-ethics
 title: 人工知能の倫理と課題
 authors: [maki]
-tags: [AI, ethics]
+tags: [ai, ethics]
 date: 2025-02-04
 excerpt: "人工知能技術の急速な進化に伴う倫理的問題とその解決策について議論します。"
 ---

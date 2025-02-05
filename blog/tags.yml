@@ -1,59 +1,84 @@
-artificial-intelligence:
-  label: AI
-  permalink: /tags/ai
-  description: 人工知能に関する最新のトレンドと実践的な応用について
-
-cloud:
-  label: クラウド
-  permalink: /tags/cloud
-  description: AWSやクラウドコンピューティングに関する技術情報
-
-ethics:
-  label: 倫理
-  permalink: /tags/ethics
-  description: テクノロジーの倫理的な課題と解決策について
-
-best-practices:
-  label: ベストプラクティス
-  permalink: /tags/best-practices
-  description: 効率的な開発・運用のためのベストプラクティス集
-
-deployment:
-  label: デプロイ
-  permalink: /tags/deployment
-  description: AWS Amplifyを使用したデプロイメントのガイド
-
-tips:
-  label: TIPS
-  permalink: /tags/tips
-  description: 開発者向けの実践的なヒントとテクニック
-
-data-science:
-  label: データサイエンス
-  permalink: /tags/data-science
-  description: データ分析と機械学習の実践的な応用
-
-trends:
-  label: トレンド
-  permalink: /tags/trends
-  description: テクノロジー業界の最新動向と将来予測
-
-machine-learning:
-  label: 機械学習
-  permalink: /tags/machine-learning
-  description: 機械学習アルゴリズムと実装について
-
-applications:
-  label: アプリケーション
-  permalink: /tags/applications
-  description: 実世界での技術応用事例
-
-docusaurus:
-  label: Docusaurus
-  permalink: /tags/docusaurus
-  description: Docusaurusを使用したドキュメント作成とサイト構築
+ai:
+  label: 'AI'
+  permalink: '/tags/ai'
+  description: '人工知能に関する記事'
 
 aws-amplify:
-  label: AWS Amplify
-  permalink: /tags/aws-amplify
-  description: AWS Amplifyを使用したウェブアプリケーション開発
+  label: 'AWS Amplify'
+  permalink: '/tags/aws-amplify'
+  description: 'AWS Amplifyに関する記事'
+
+best-practices:
+  label: 'ベストプラクティス'
+  permalink: '/tags/best-practices'
+  description: '開発のベストプラクティスに関する記事'
+
+data-science:
+  label: 'データサイエンス'
+  permalink: '/tags/data-science'
+  description: 'データサイエンスに関する記事'
+
+machine-learning:
+  label: '機械学習'
+  permalink: '/tags/machine-learning'
+  description: '機械学習に関する記事'
+
+mobility:
+  label: 'モビリティ'
+  permalink: '/tags/mobility'
+  description: 'モビリティに関する記事'
+
+ev:
+  label: 'EV'
+  permalink: '/tags/ev'
+  description: '電気自動車に関する記事'
+
+autonomous-driving:
+  label: '自動運転'
+  permalink: '/tags/autonomous-driving'
+  description: '自動運転に関する記事'
+
+future-forecast:
+  label: '将来予測'
+  permalink: '/tags/future-forecast'
+  description: '将来予測に関する記事'
+
+business-analysis:
+  label: 'ビジネス分析'
+  permalink: '/tags/business-analysis'
+  description: 'ビジネス分析に関する記事'
+
+market-research:
+  label: '市場調査'
+  permalink: '/tags/market-research'
+  description: '市場調査に関する記事'
+
+ethics:
+  label: '倫理'
+  permalink: '/tags/ethics'
+  description: 'テクノロジーの倫理的な課題と解決策について'
+
+cloud:
+  label: 'クラウド'
+  permalink: '/tags/cloud'
+  description: 'クラウドコンピューティングに関する記事'
+
+deployment:
+  label: 'デプロイ'
+  permalink: '/tags/deployment'
+  description: 'デプロイメントに関する記事'
+
+tips:
+  label: 'TIPS'
+  permalink: '/tags/tips'
+  description: '開発のヒントとテクニック'
+
+trends:
+  label: 'トレンド'
+  permalink: '/tags/trends'
+  description: '技術トレンドに関する記事'
+
+applications:
+  label: 'アプリケーション'
+  permalink: '/tags/applications'
+  description: '実装と応用に関する記事'

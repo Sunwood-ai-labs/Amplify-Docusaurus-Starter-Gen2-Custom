@@ -2,7 +2,7 @@
 slug: aws-amplify-deployment-tips
 title: AWS Amplifyを活用したデプロイのヒント
 authors: [maki]
-tags: [AWS Amplify, deployment, tips]
+tags: [aws-amplify, deployment, tips]
 date: 2025-02-04
 excerpt: "AWS Amplifyを用いたデプロイの基本手順と、よくある問題への対処法について解説します。"
 ---

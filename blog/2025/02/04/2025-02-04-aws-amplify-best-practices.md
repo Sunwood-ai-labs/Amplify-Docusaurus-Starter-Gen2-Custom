@@ -2,7 +2,7 @@
 slug: aws-amplify-best-practices
 title: AWS Amplifyのベストプラクティスと活用方法
 authors: [maki]
-tags: [AWS Amplify, best practices, cloud]
+tags: [aws amplify, best practices, cloud]
 date: 2025-02-04
 excerpt: "Amplifyを使った効果的な開発・運用方法と、クラウドリソースの最適利用法について解説します。"
 ---

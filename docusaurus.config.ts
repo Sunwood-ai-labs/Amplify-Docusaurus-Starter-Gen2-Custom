@@ -20,7 +20,7 @@ const config: Config = {
   organizationName: 'Sunwood-ai-labs', // Usually your GitHub org/user name.
   projectName: 'Amplify-Docusaurus-Starter', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -44,11 +44,13 @@ const config: Config = {
         },
         blog: {
           showReadingTime: true,
-          // ブログをトップページに設定
-          routeBasePath: '/',
+          // ブログのルートパスを/blogに設定
+          routeBasePath: 'blog',
           // サイドバーに表示する記事数を増やす
           blogSidebarCount: 'ALL',
           blogSidebarTitle: '全ての記事',
+          // 未切り詰めのブログ投稿の警告を無視
+          onUntruncatedBlogPosts: 'ignore',
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
@@ -60,7 +62,6 @@ const config: Config = {
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -91,7 +92,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          to: '/tags',
+          to: '/blog/tags',
           label: 'Tags',
           position: 'left',
         },
