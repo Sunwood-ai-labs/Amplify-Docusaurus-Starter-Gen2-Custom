@@ -1,6 +1,6 @@
 <div align="center">
 
-![Image](https://github.com/user-attachments/assets/dab40454-1ab9-4a47-b63f-3c353dcd44f7)
+![Image](https://github.com/user-attachments/assets/b7888e2f-649a-4685-9b94-6afe6a5f6755)
 
 # 🚀 Amplify-Docusaurus-Starter
 
