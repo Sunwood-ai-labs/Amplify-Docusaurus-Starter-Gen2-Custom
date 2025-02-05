@@ -12,7 +12,7 @@ const config: Config = {
   // Set the production url of your site here
   url: 'https://staging.d28wunjm2nr6tk.amplifyapp.com',
   // Set the /<baseUrl>/ pathname under which your site is served
-  baseUrl: '/',
+  baseUrl: '/Amplify-Docusaurus-Starter-Gen2-Custom/',
   trailingSlash: true,
 
   // GitHub pages deployment config.
