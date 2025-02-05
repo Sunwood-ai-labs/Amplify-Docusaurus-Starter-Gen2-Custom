@@ -3,7 +3,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-image: url('/Amplify-Docusaurus-Starter-Gen2-Custom/img/hero-background.png');
+  background-image: url('@site/static/img/hero-background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -18,9 +18,9 @@
   bottom: 0;
   background: linear-gradient(135deg, 
     var(--ifm-color-primary-darkest) 0%,
-    var(--ifm-color-primary) 50%,
+    var(--ifm-color-primary) 80%,
     var(--ifm-color-primary-lighter) 100%);
-  opacity: 0.85;
+  opacity: 0.55;
   z-index: 1;
 }
 
