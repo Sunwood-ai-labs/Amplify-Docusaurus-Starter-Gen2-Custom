@@ -18,7 +18,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Sunwood-ai-labs', // Usually your GitHub org/user name.
-  projectName: 'Amplify-Docusaurus-Starter', // Usually your repo name.
+  projectName: 'Amplify-Docusaurus-Starter-Gen2-Custom', // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -40,7 +40,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Sunwood-ai-labs/Amplify-Docusaurus-Starter/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Sunwood-ai-labs/Amplify-Docusaurus-Starter-Gen2-Custom/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -57,7 +57,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Sunwood-ai-labs/Amplify-Docusaurus-Starter/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Sunwood-ai-labs/Amplify-Docusaurus-Starter-Gen2-Custom/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -97,7 +97,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          href: 'https://github.com/Sunwood-ai-labs/Amplify-Docusaurus-Starter',
+          href: 'https://github.com/Sunwood-ai-labs/Amplify-Docusaurus-Starter-Gen2-Custom',
           label: 'GitHub',
           position: 'right',
         },
@@ -141,7 +141,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/Sunwood-ai-labs/Amplify-Docusaurus-Starter',
+              href: 'https://github.com/Sunwood-ai-labs/Amplify-Docusaurus-Starter-Gen2-Custom',
             },
           ],
         },
